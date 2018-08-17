@@ -1,9 +1,6 @@
 FROM lsiobase/alpine.armhf:3.7
 
-# work around for hanging configure
-ARG CONFIG_SHELL=/bin/sh
- 
-RUN \
+ RUN \
  echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
 	autoconf \
