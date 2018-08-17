@@ -1,6 +1,6 @@
 FROM lsiobase/alpine.armhf:3.7
 
- RUN \
+RUN \
  echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
 	autoconf \
